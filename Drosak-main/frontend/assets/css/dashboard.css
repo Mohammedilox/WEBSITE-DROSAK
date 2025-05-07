@@ -1,0 +1,30 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+  }
+  .sidebar {
+    width: 250px;
+    transition: all 0.3s;
+  }
+  .sidebar.collapsed {
+    margin-left: -250px;
+  }
+  .sidebar .nav-link {
+    color: #fff;
+  }
+  .sidebar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .content {
+    transition: margin-left 0.3s;
+    margin-left: 250px;
+  }
+  .collapsed + .content {
+    margin-left: 0;
+  }
+  .card-course {
+    transition: transform 0.2s;
+  }
+  .card-course:hover {
+    transform: translateY(-4px);
+  }

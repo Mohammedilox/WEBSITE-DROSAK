@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drosak Courses</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-gray-100 text-gray-800 transition-all duration-300">
+  <!-- Header -->
+  <!-- Navbar -->
+<header class="bg-white dark:bg-gray-900 shadow sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <div class="flex items-center space-x-4">
+      <h1 class="text-2xl font-bold text-blue-600 dark:text-blue-400">🧠 Drosak</h1>
+      <nav class="hidden md:flex gap-6 text-gray-700 dark:text-gray-200">
+        <a href="index.html" class="hover:text-blue-500">Home</a>
+        <a href="course.html" class="hover:text-blue-500">Courses</a>
+        <a href="dashboard.html" class="hover:text-blue-500">Dasboard</a>
+        <a href="login.html" class="hover:text-blue-500">Login</a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-2">
+      <button id="theme-toggle" class="bg-gray-800 text-white px-3 py-1 rounded">🌓</button>
+      <button id="lang-toggle" class="bg-blue-600 text-white px-3 py-1 rounded">🌐</button>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Welcome Text -->
+  <section class="max-w-7xl mx-auto px-4 py-6">
+    <h2 id="welcome-text" class="text-3xl font-bold mb-2">Welcome to Drosak – Your Gateway to Learning</h2>
+    <p id="description-text" class="text-gray-600 dark:text-gray-300 mb-4">
+      Explore top-rated tech courses in Arabic and English, free and paid.
+    </p>
+
+    <!-- Filters -->
+    <div class="flex flex-wrap gap-4 mb-6">
+      <select id="langFilter" class="px-3 py-1 rounded border">
+        <option value="all">🌐 All Languages</option>
+        <option value="English">English</option>
+        <option value="Arabic">Arabic</option>
+      </select>
+
+      <select id="priceFilter" class="px-3 py-1 rounded border">
+        <option value="all">💰 All Prices</option>
+        <option value="Free">Free</option>
+        <option value="Paid">Paid</option>
+      </select>
+
+      <select id="ratingFilter" class="px-3 py-1 rounded border">
+        <option value="all">⭐ All Ratings</option>
+        <option value="5">★★★★★</option>
+        <option value="4">★★★★☆</option>
+        <option value="3">★★★☆☆</option>
+        <option value="2">★★☆☆☆</option>
+        <option value="1">★☆☆☆☆</option>
+      </select>
+    </div>
+
+    <!-- Courses -->
+    <div id="courses" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Cards inserted here -->
+    </div>
+  </section>
+
+  <script src="../assets/js/course.js"></script>
+</body>
+</html>
